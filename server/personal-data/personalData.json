@@ -1,0 +1,25 @@
+[
+  {
+    "selfDetails": {
+      "name": "Sareen Garnaik",
+      "email": "sareengarnaik15@gmail.com",
+      "phone": {
+        "ph1": 9668123282,
+        "ph2": 9337557434
+      }
+    },
+    "address": {
+      "street": "Dhanupali",
+      "city": "Sambalpur",
+      "state": "Odisha",
+      "zip": 769015
+    },
+    "bio": "Hello! I'm Sareen Garnaik, a passionate Software Developer specializing in full-stack development. With over three years of experience in building web applications, I have honed my skills in JavaScript, React, Node, MongoDB, solidity etc. Currently, I am working as a Senior Developer at Tech Innovations, where I lead a team in developing scalable and user-friendly applications. I have successfully delivered numerous projects, including an e-commerce platform that increased the client's sales by 30%. I hold a Bachelor's degree in Computer Science from Stanford University. My key strengths include problem-solving, project management, and a keen eye for detail. I am also proficient in cloud technologies and DevOps practices. Outside of work, I enjoy hiking, photography, and exploring new technologies. My goal is to continue growing as a developer and eventually transition into a leadership role where I can mentor and guide the next generation of tech enthusiasts.",
+    "socialLinks": {
+      "linkedin": "NIL",
+      "github": "NIL",
+      "twitter": "NIL",
+      "facebook": "NIL"
+    }
+  }
+]

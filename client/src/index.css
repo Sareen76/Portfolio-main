@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+@keyframes rotate360 {
+    from {
+      transform: rotate(360deg) scale(1);
+    }
+    to {
+      transform: rotate(0deg) scale(0);
+    }
+  }
+
+  .rotate-360 {
+    animation: rotate360 1s linear;
+  }
