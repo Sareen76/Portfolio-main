@@ -18,7 +18,7 @@ const getPersonalInfo = (request, response) => {
 
   try {
     const personalInfo = fs.readFileSync(filePath, "utf8"); //reads the content of personalInfo.json synchronously and returns it as a string.
-    return response.status(200).json({ msg: "Data retrived", personalInfo });
+    return response.status(200).json({ msg: "Data retrived", personalInfo : JSON.parse(personalInfo)});
   } catch (error) {
     return response.status(500).json({ msg: "Error retriving data", error });
   }
