@@ -1,22 +1,35 @@
-.container{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
-}
+.line {animation: 15s slidedown ease;} 
 
-.content{
-    align-items: center;
-    width: 400px;
-}
+@keyframes slidedown
+{
+0% { bottom : 100% }
+100% { bottom : 8% }
+} 
 
-.progressBar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-}
+
+/* Tech Slab Css */
+  .title,
+  .logo{
+    transition: .5s ease-in-out;
+  }
+
+  .card:hover .title{
+    transform: scale(1.1);
+  }
+
+  .card:hover .logo{
+    cursor: pointer;
+    transform: translate(-82px, 52px) scale(1.8);
+    animation: 2s forwards ease-in-out;
+    opacity: .7;
+    z-index: -1;
+  }
+
+
+
+  /* ShowCOntent */
+
+  .image{
+  clip-path: polygon(35% 0%, 100% 0, 100% 100%, 8% 100%); 
+  height: 31rem;
+  }

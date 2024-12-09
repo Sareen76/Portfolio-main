@@ -1,11 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  /* Text Colors */
+  --text-color-primary: #ffffff; /* General text color */
+  --text-color-highlight: #ffce6e; /* Big text color */
+
+  /* Background Colors */
+  --background-main: #34353a; /* Main background color */
+  --background-sub: rgb(49, 51, 59); /* Sub background color */
+  --background-card: #f0bf6c; /* Card background color */
+
+  /* Utility Colors */
+  --border-color: rgba(255, 255, 255, 0.1); /* Light border for subtle separation */
+}
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Montserrat', 'Helvetica Neue', 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700; /* Bold headings */
+}
+
+p {
+  font-weight: 400; /* Regular text */
+  line-height: 1.6;
+}
+
+button, input, select {
+  font-family: inherit;
+  font-weight: 500;
 }
 
 
@@ -21,3 +57,6 @@
   .rotate-360 {
     animation: rotate360 1s linear;
   }
+
+
+

@@ -16,24 +16,24 @@ const Header = () => {
   const { mode, toggleTheme } = useContext(DataContext);
 
   return (
-    <div className="flex flex-col justify-between px-2 py-2 min-h-full" style={mode === 'dark' ? darkModeBackgroud : lightModeBackgroud}>
+    <div className="flex lg:flex-col justify-between sm:items-center sm:rounded-b-2xl px-2 py-2 h-full" style={mode === 'dark' ? darkModeBackgroud : lightModeBackgroud}>
       <h1 className="text-3xl font-bold text-center"> LOGO</h1>
-      <div className="flex flex-col items-center gap-3 text-3xl">
-        <span className="p-1 flex flex-row gap-3 items-center group">
+      <div className="flex lg:flex-col sm:flex-row items-center gap-3 text-3xl">
+        <span className="p-1 flex flex-row gap-3 items-center sm:flex-col group">
           <FaLinkedin className="hover:scale-125 transition-transform duration-300 " />
-          <label htmlFor="@" className="mb-1 absolute ml-10 font-medium text-2xl opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"> Linkedin</label>
+          <label htmlFor="@" className="mb-1 absolute ml-10 font-medium text-2xl opacity-0 sm:hidden group-hover:opacity-100 transition-opacity pointer-events-none"> Linkedin</label>
         </span>
-        <span className="p-1 flex flex-row gap-3 items-center group">
+        <span className="p-1 flex flex-row gap-3 items-center sm:flex-col group">
           <FaGithub className="hover:scale-125 transition-transform duration-300" />
-          <label htmlFor="@" className="mb-1 absolute ml-10 font-medium text-2xl opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"> GitHub </label>
+          <label htmlFor="@" className="mb-1 absolute ml-10 font-medium text-2xl opacity-0 sm:hidden group-hover:opacity-100 transition-opacity pointer-events-none"> GitHub </label>
         </span>
-        <span className="p-1 flex flex-row gap-3 items-center group">
+        <span className="p-1 flex flex-row gap-3 items-center sm:flex-col group">
           <FaTwitter className="hover:scale-125 transition-transform duration-300" />
-          <label htmlFor="@" className="mb-1 absolute ml-10 font-medium text-2xl opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"> Twitter</label>
+          <label htmlFor="@" className="mb-1 absolute ml-10 font-medium text-2xl opacity-0 sm:hidden group-hover:opacity-100 transition-opacity pointer-events-none"> Twitter</label>
         </span>
-        <span className="p-1 flex flex-row gap-3 items-center group">
+        <span className="p-1 flex flex-row gap-3 items-center sm:flex-col group">
           <FaInstagram className="hover:scale-125 transition-transform duration-300" />
-          <label htmlFor="@" className="mb-1 absolute ml-10 font-medium text-2xl opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"> Instagram</label>
+          <label htmlFor="@" className="mb-1 absolute ml-10 font-medium text-2xl opacity-0 sm:hidden group-hover:opacity-100 transition-opacity pointer-events-none"> Instagram</label>
         </span>
       </div>
 
@@ -42,7 +42,7 @@ const Header = () => {
           onClick={ toggleTheme }
           className="bg-white text-black font-bold rounded-full h-10 w-10"
         >
-          {mode === "dark" ? <img src={Moon} alt="D" className={`h-10 w-10 rounded-full`}/> : <img src={Sun} alt="L" className={`h-10 w-10 rounded-full`}/>}
+          {mode === "dark" ? <img src={Moon} alt="D" title="current mode : dark" className={`h-10 w-10 rounded-full`}/> : <img src={Sun} alt="L" title="current mode : light" className={`h-10 w-10 rounded-full`}/>}
         </button>
       </div>
     </div>
