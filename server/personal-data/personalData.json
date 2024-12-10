@@ -21,6 +21,29 @@
       "github": "NIL",
       "twitter": "NIL",
       "facebook": "NIL"
-    }
+    } ,
+    "metrics": [
+      {
+        "title": "Projects Completed",
+        "value": 12,
+        "description": "Completed Projects"
+      },
+      {
+        "title": "Programming Languages",
+        "value": 10,
+        "description": "Languages Proficient"
+      },
+      {
+        "title": "Certifications",
+        "value": 5,
+        "description": "Industry Recognized Certifications"
+      },
+      {
+        "title": "GitHub Contributions",
+        "value": 500,
+        "description": "Commits in the Last Year"
+      }
+    ]
+    
   }
 ]

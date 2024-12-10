@@ -45,9 +45,9 @@ function Hero() {
 
 
   return (
-    <div className="container w-full flex flex-row flex-wrap-reverse  h-screen sm:h-auto items-center justify-center lg:items-center z-0">
+    <div className="container w-full flex flex-row flex-wrap-reverse  lg:h-screen sm:h-auto items-center justify-center lg:items-center z-0">
 
-    {/* <div className="overall absolute h-[150vh] w-[100%] z-[999] pointer-event-auto bg-transparent" ></div> */}
+
 
       <div className="banner lg:w-1/2 sm:w-full p-4  " onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
         <div className="heading text-center flex flex-col gap-1 mb-3">
@@ -59,7 +59,7 @@ function Hero() {
         </div>
         <div className="resume w-full flex justify-center ">
           <button
-            className=" text-[#f0bf6c] font-bold rounded-md px-4 py-3 hover:scale-[1.06] transition-all ease-in-out border-[#f0bf6c] border-[3px] transition-all "
+            className=" text-[#f0bf6c] font-bold rounded-md px-4 py-3 hover:scale-[1.06] transition-all ease-in-out border-[#f0bf6c] border-[3px]"
             href=""
             style={{
               boxShadow:
@@ -68,6 +68,17 @@ function Hero() {
           >
             Resume
           </button>
+        </div>
+
+        <div className="metrics w-full p-2 mt-11 ">
+          <ul className="listmetrics flex justify-evenly">
+            {data.metrics.map((metric, index) => (
+              <li key={index} className='flex flex-col items-center'>
+                <p className='text-2xl font-semibold'>{metric.value} +</p>
+                <h1 className='text-sm font-normal'>{metric.title.split(" ")[0]}</h1>
+              </li>
+              ))}
+          </ul>
         </div>
 
       </div>
@@ -79,7 +90,7 @@ function Hero() {
         />
       </div> */}
 
-      <div className="heroContainer relative flex items-center justify-center lg:w-1/2   sm:w-full mb-4  h-[70vh] sm:h-[40vh]" 
+      <div className="heroContainer relative flex items-center justify-center lg:w-1/2  sm:w-full mb-4  lg:h-[70vh] lg:pt-20 sm:h-[40vh]" 
       
       >
         <div className="hero relative h-[30rem] w-[30rem]" onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>

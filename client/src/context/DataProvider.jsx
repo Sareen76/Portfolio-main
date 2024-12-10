@@ -5,10 +5,12 @@ import axios from "axios"
 export const DataContext = createContext(null); // making a context
 
 
+
 const DataProvider = ({ children }) => {
   const [mode, setMode] = useState(null);
   const [personInfo, setPersonInfo] = useState(null);
   const [loading, setLoading] = useState(true);
+  const API_URL = import.meta.env.VITE_API_URL;
 
   useEffect(() => {
     const savedMode = localStorage.getItem('mode');
@@ -22,7 +24,7 @@ const DataProvider = ({ children }) => {
   const getData = async () => {
     try {
       setLoading(true);
-      const response = await axios.get("http://localhost:3000/getinfo");
+      const response = await axios.get(`${API_URL}/getinfo`);
       setTimeout(() => {
         console.log('ss');
       }, 3000);

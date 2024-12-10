@@ -40,7 +40,7 @@ function Layout() {
               </header>
 
               {/* Main Content */}
-              <main className="flex-grow lg:ml-[12%] lg:mr-[12%] sm:m-0 sm:mt-9">
+              <main className="flex-grow lg:ml-[12%] lg:mr-[12%] lg:mt-0 sm:m-0 sm:mt-9">
                 <Outlet />
               </main>
 
