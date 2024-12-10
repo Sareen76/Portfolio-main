@@ -41,10 +41,6 @@ const DataProvider = ({ children }) => {
   }, []); // Empty dependency array to run only on mount
 
   useEffect(() => {
-    console.log(personInfo); // Log personInfo whenever it updates
-  }, [personInfo]);
-
-  useEffect(() => {
     if (mode !== null) {
       document.documentElement.className = mode;
       localStorage.setItem('mode', mode);

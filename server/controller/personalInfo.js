@@ -13,8 +13,9 @@ if (typeof __dirname === "undefined") {
 // Also no need of try and catch
 const getPersonalInfo = (request, response) => {
 
-  // console.log('Current directory:', __dirname);
-  const filePath = __dirname + "\\personal-data\\personalData.json";
+
+// Dynamically build the file path
+const filePath = path.join(__dirname, 'personal-data', 'personalData.json');
 
   try {
     const personalInfo = fs.readFileSync(filePath, "utf8"); //reads the content of personalInfo.json synchronously and returns it as a string.
