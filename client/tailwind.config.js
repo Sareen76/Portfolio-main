@@ -9,6 +9,9 @@ export default {
       width: {
         '37': '9.25rem', // Adds a custom width class `w-38`
       },
+      sm:{
+        
+      }
     },
   },
   plugins: [],

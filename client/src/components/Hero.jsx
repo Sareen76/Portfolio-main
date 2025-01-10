@@ -45,7 +45,7 @@ function Hero() {
 
 
   return (
-    <div className="container w-full flex flex-row flex-wrap-reverse  lg:h-screen sm:h-auto items-center justify-center lg:items-center z-0">
+    <div className="container  w-[90%] flex flex-row flex-wrap-reverse  lg:h-screen sm:h-auto items-center justify-center lg:items-center z-0 m-auto">
 
 
 
@@ -90,7 +90,7 @@ function Hero() {
         />
       </div> */}
 
-      <div className="heroContainer relative flex items-center justify-center lg:w-1/2  sm:w-full mb-4  lg:h-[70vh] lg:pt-20 sm:h-[40vh]" 
+      <div className="heroContainer relative flex items-center justify-center lg:w-1/2  sm:w-full mb-4  lg:h-[70vh] lg:pt-12 sm:h-[40vh] scale-[1.3]" 
       
       >
         <div className="hero relative h-[30rem] w-[30rem]" onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>

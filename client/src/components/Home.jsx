@@ -8,6 +8,7 @@ import Hero from "./Hero.jsx";
 import ProgressBar from "./ProgressBar.jsx";
 import Techslab from './Techslab.jsx';
 import ShowFront from "./ShowFront.jsx";
+import LineBreaker from "./LineBreaker/LineBreaker.jsx";
 
 
 function Home() {
@@ -21,11 +22,11 @@ function Home() {
       <section className="">
         <Hero />
       </section>
-
+      
       <section>
         <Techslab />
       </section>
-
+      <LineBreaker/>
       <section>
         <Project />
       </section>

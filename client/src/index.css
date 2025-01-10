@@ -17,11 +17,16 @@
   --border-color: rgba(255, 255, 255, 0.1); /* Light border for subtle separation */
 }
 
+html {
+  font-size: 14px; /* Changes the base size */
+}
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
 
 
 body {
