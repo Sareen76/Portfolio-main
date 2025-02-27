@@ -10,7 +10,7 @@ const DataProvider = ({ children }) => {
   const [mode, setMode] = useState(null);
   const [personInfo, setPersonInfo] = useState(null);
   const [loading, setLoading] = useState(true);
-  const API_URL = "http://localhost:3000"; // change before deploy
+  const API_URL = "https://portfolio-main-ygew.onrender.com"; // change before deploy
 
   useEffect(() => {
     const savedMode = localStorage.getItem('mode');
